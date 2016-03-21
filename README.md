@@ -3,10 +3,8 @@
 
 ## 效果图
 ![effect 1](http://img.blog.csdn.net/20160321165436032?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
-***
 ![effect 2](http://img.blog.csdn.net/20160321170224134?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
-***
 ![effect 3](http://img.blog.csdn.net/20160321170733829?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
-***
+
 ###详情链接
 http://blog.csdn.net/ivan_zgj/article/details/50947580?ticket=ST-19795-p6PvcPcidLfMcBUBVIXJ-passport.csdn.net
