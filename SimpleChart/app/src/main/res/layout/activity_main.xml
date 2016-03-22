@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <com.ivan.chart.simplechart.chart.StackedColumnChart
+    <com.ivan.chart.simplechart.chart.LineChart
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/chart"

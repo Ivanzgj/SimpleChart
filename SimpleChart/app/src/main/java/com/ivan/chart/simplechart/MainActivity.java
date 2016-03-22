@@ -4,22 +4,25 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.ivan.chart.simplechart.chart.Chart;
+import com.ivan.chart.simplechart.chart.LineChart;
+import com.ivan.chart.simplechart.chart.ParallelColumnChart;
 import com.ivan.chart.simplechart.chart.StackedColumnChart;
 import com.ivan.chart.simplechart.chart.provider.ColumnChartAdapter;
+import com.ivan.chart.simplechart.chart.provider.LineChartAdapter;
 import com.ivan.chart.simplechart.chart.theme.ChartTheme;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    StackedColumnChart chart;
+    LineChart chart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        chart = (StackedColumnChart) findViewById(R.id.chart);
+        chart = (LineChart) findViewById(R.id.chart);
 
         final ArrayList<Float> y1 = new ArrayList<>();
         final ArrayList<Float> y2 = new ArrayList<>();
@@ -46,20 +49,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         chart.setTheme(ChartTheme.THEME_DARK);
-        chart.setAdapter(new ColumnChartAdapter() {
+        chart.setAdapter(new LineChartAdapter() {
             @Override
-            public int getColumnCount() {
+            public int getLineCount() {
                 return 2;
             }
 
             @Override
-            public ArrayList<Float> getColumnData(int index) {
+            public ArrayList<Float> getLineData(int index) {
                 if (index == 0) return y1;
                 else            return y2;
             }
 
             @Override
-            public int getColumnColor(int index) {
+            public int getLineColor(int index) {
                 return colors.get(index);
             }
 
@@ -94,6 +97,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        chart.animateY(3000, 2000);
+        chart.animateX(3000, 2000);
     }
 }

@@ -729,6 +729,13 @@ public abstract class Chart extends View {
     private class OnGestureDetector extends GestureDetector.SimpleOnGestureListener {
         @Override
         public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
+            if (e1.getY() > viewHeight - allLegendsHeight || e1.getY() < topMargin) {
+                return false;
+            }
+            if (e1.getX() < yLabelWidth) {
+                return false;
+            }
+
             scrollOffset = e2.getX() - e1.getX();
             if (-(curOffset + scrollOffset) < 0) {
                 scrollOffset = -curOffset;
